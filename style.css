@@ -9,6 +9,11 @@ body {
 }
 
 .page {
+    .page {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    height: 100%;
     position: relative;
     margin-top: 0px;
     background-color: #FFF;
@@ -18,6 +23,12 @@ body {
     display: inline-block;
     text-align: left;
     height: 99vh;
+}
+
+/* Image Styling */
+.header {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Sticky Navbar */
