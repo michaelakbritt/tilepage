@@ -1,90 +1,60 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
-/* Image Tiles Container (flex layout for stacking) */
-.image-tiles {
-    display: flex;
-    flex-direction: column; /* Stack the images vertically */
+/* Sticky Navigation */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 100;
 }
 
-.outer {
-    text-align: center;
+.logo {
+  max-height: 100px;
 }
 
-.page {
-    .page {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;     /* Vertically center */
-    height: 100%;
-    position: relative;
-    margin-top: 0px;
-    background-color: #FFF;
-    max-width: 1200px;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: left;
-    height: 99vh;
+/* Main Content */
+main {
+  margin-top: 120px; /* Space for sticky navigation */
 }
 
-/* Image Styling */
-.header {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Sticky Navbar */
-.topofpage {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    z-index: 1000;
-    width: 100%;
-    text-align: center;
-}
-
-.topofpage ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.topofpage ul li {
-    display: inline;
-}
-
-.topofpage ul li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topofpage ul li a:hover {
-    background-color: #111;
-}
-
-.image-tiles {
-    display: flex;
-    flex-direction: column; /* Stack the images vertically */
-}
-
-/* Styling each tile inside the flex container */
+/* Tile Styling */
 .tile {
-    width: 100%; /* Ensure each image takes the full width */
-    height: 100vh; /* Ensure each image takes full screen height */
-    overflow: hidden; /* Prevents overflow */
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Image inside the tile */
-.tile img {
-    width: 100%;
-    height: 100%; /* Makes sure the image fills the container */
-    object-fit: cover; /* Ensures image maintains aspect ratio */
+.tile-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Darken background for text readability */
+  padding: 20px;
+  max-width: 80%;
+}
+
+.tile h2 {
+  font-size: 2rem;
+}
+
+.tile p {
+  font-size: 1.2rem;
+}
