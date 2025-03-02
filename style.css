@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.outer {
+    text-align: center;
+}
+
+.page {
+    position: relative;
+    margin-top: 0px;
+    background-color: #FFF;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    height: 99vh;
+}
+
+/* Sticky Navbar */
+.topofpage {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+}
+
+.topofpage ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topofpage ul li {
+    display: inline;
+}
+
+.topofpage ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topofpage ul li a:hover {
+    background-color: #111;
+}
