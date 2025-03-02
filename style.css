@@ -4,6 +4,12 @@ body {
     background-color: #000;
 }
 
+/* Image Tiles Container (flex layout for stacking) */
+.image-tiles {
+    display: flex;
+    flex-direction: column; /* Stack the images vertically */
+}
+
 .outer {
     text-align: center;
 }
